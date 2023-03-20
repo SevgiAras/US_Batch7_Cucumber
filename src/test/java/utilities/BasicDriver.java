@@ -17,12 +17,12 @@ public class BasicDriver {
 
             System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
         }
             return driver;
 
         }
-        public void quitDriver(){
+        public static void quitDriver(){
             try {
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
